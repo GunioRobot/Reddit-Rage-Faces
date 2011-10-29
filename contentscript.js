@@ -8,7 +8,7 @@ req.open(
     false);
 req.setRequestHeader('Content-type', 'text/html');
 req.send('');
-var styleScript = req.responseText; 
+var styleScript = req.responseText;
 // Use a style tag to inject applied_subreddit_stylesheet classes
 var rageStyles = "<style type=\"text/css\" title=\"applied_subreddit_stylesheet\"> ";
 var rageIndex = styleScript.indexOf("a[href=");
